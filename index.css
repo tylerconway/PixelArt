@@ -1,0 +1,23 @@
+body{
+    background-color: lightgray; 
+}
+
+#canvas{
+    background-color: white;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    display: grid;
+    /*grid-template-columns: repeat (20, 1fr); */
+    /*grid-template-columns: repeat (20, 1fr); */
+}
+
+#pallet{
+    background-color: white;
+    height: 100px;
+    width: 400px;
+    margin: auto;
+    display: grid;
+    /*grid-template-columns: repeat (20, 33px); */
+}
+
