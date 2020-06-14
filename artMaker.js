@@ -16,13 +16,12 @@ window.onload = function(){
     let activeColor = 'red';
 
     let clickBoxes = document.querySelectorAll('span');
-    //for each element in this array, add event listener and change to red on click.
+    //for each element in this array, add event listener and change to active color on click.
     for (let clickBox of clickBoxes){
         clickBox.addEventListener('click', function(event) {
             clickBox.style.backgroundColor = activeColor;
           })
     }
-    
    //create color pallet 
     let colorChoices = ['red', 'orange', 'yellow', 'green', 'blue', 'purple'];
     for(let color of colorChoices) {    
@@ -41,6 +40,10 @@ window.onload = function(){
     palletBox.addEventListener('click', function(event) {
         activeColor = palletBox.style.backgroundColor;
         })
+    
+    palletPicker.addEventListener('click', function(event) {
+        activeColor = palletPicker.style.backgroundColor;
+        })    
 
     palletContainer.appendChild(palletBox);
     palletPicker.appendChild(palletContainer);
