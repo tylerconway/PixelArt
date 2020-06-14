@@ -30,6 +30,10 @@ window.onload = function(){
     let palletContainer = document.querySelector('#pallet');
     palletContainer.style.gridTemplate = 'repeat(1, 1fr) / repeat(6, 1fr)'
 
+    let palletPicker = document.querySelector('#picker');
+    palletPicker.style.gridTemplate = 'repeat(1, 1fr) / repeat(1, 1fr)'
+
+
     for(let i = 0; i < 6; i++) {
         let palletBox = document.createElement('span');
         palletBox.style.backgroundColor = colorChoices[i];
