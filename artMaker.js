@@ -37,10 +37,12 @@ window.onload = function(){
         let palletBox = document.createElement('span');
         palletBox.style.backgroundColor = colorChoices[i];
     
+    //if particular palletBox is clicked, change the activeColor to whatever background color was clicked
     palletBox.addEventListener('click', function(event) {
         activeColor = palletBox.style.backgroundColor;
         })
     
+    //if custom color is chosen, change the activeColor to whatever background color was clicked
     palletPicker.addEventListener('click', function(event) {
         activeColor = palletPicker.style.backgroundColor;
         })    
