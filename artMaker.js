@@ -43,9 +43,11 @@ window.onload = function(){
         })
 
     palletContainer.appendChild(palletBox);
+    palletPicker.appendChild(palletContainer);
     }
 
     document.body.appendChild(palletContainer);
+    document.body.appendChild(palletPicker);
     }
 
 
